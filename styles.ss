@@ -1,31 +1,29 @@
-/* Custom CSS styles */
-.container {
-    margin-top: 20px;
+/* Custom CSS for adding color to the website */
+
+/* Background color */
+body {
+    background-color: #f0f0f0; /* Light Gray */
 }
 
+/* Headings */
 .heading {
-    background-color: #FED6F7;
-    margin-bottom: 20px;
-    padding: 5px 0px 5px 15px;
-    color: white;
+    color: #ff5733; /* Reddish-Orange */
 }
 
-.title {
-    background-color: #FED6F7;
-    padding: 5px;
-    color: white;
+/* Buttons */
+.btn-primary {
+    background-color: #ff3366; /* Pink */
+    color: #ffffff; /* White */
 }
 
-#runtime {
-    background-color: #FED6F7;
-    color: #3e8fde;
-    padding: 0px 0px 5px 5px;
+/* Movie details background */
+#movie-details {
+    background-color: #66ff33; /* Greenish-Yellow */
 }
 
-.content {
-    color: #FED6F7;
+/* Sold-out movies */
+.sold-out.film.item {
+    border: 1px solid #ff0000; /* Red */
+    color: #ff0000; /* Red */
 }
 
-#ticket-num {
-    margin-bottom: 15px;
-}
