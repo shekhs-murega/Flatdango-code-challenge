@@ -1,43 +1,169 @@
-/* Global styles */
+/* Global Styles */
 body {
-  background-color: black;
-  color: white;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: paleturquoise;
 }
 
-.container {
-  padding: 20px;
-}
-
+/* Navigation Bar Styles */
 .heading {
-  font-size: 2rem;
-  margin-top: 20px;
-}
-
-.list-group {
+  background-color: paleturquoise;
   padding: 20px;
-  }
-
-#movie-details {
-  padding: 10px;
-  border: 1px solid #ccc;
-  background-color: palevioletred;
+  text-align: center;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
-/* Responsive styles for smaller screens (less than 768px) */
-@media (max-width: 600px) {
-  .container {
-      padding: 30px;
-  }
+#content{
+  font-size: 40px;
+  font-family: cursive;
+}
 
-  .heading {
-      font-size: 1.5rem;
-  }
+#spanhead{
+  width: auto;
+  background-color: beige;
+  color:pink;
+  font-family: fantasy;
+  font-style: italic;
+  font-size: 40px;
+  font-weight: 100;
+}
 
-  .list-group {
-      padding: 30px;
-  }
+#subtitle {
+  font-size: 18px;
+  color: rgb(80, 22, 15);
+  font-weight: 600;
+  font-style: italic;
+  font-family: cursive;
+}
 
-  #movie-details {
-      padding: 10px;
-  }
+h3 {
+  font-size: 18px;
+  color: rgb(80, 22, 15);
+  font-weight: 600;
+  font-family: cursive;
+  text-align: center;
+}
+.centeredgrid {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+  height: max-content;
+  padding: 10px;
+  font-family: monospace;
+  align-items: center;
+}
+/* Left Menu Styles */
+
+#leftmenu {
+  background-color: #fff;
+  border: 2px solid #3c2525;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-left: 1%;
+  width: 30%;
+  font-size: 20px;
+}
+
+#buymovie {
+  background-color: bisque;
+  width: 60%;
+  height: fit-content;
+  padding: 20px;
+  margin: auto;
+  margin-left: 0;
+  margin-right: 10px;
+
+}
+
+#poster{
+  margin: auto;
+  align-content: center;
+}
+
+#dividedlist {
+  list-style: none;
+  padding: 0;
+}
+
+#dividedlist li {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+#dividedlist a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+}
+
+#dividedlist a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Main Content Styles */
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.meta {
+  font-size: 16px;
+}
+
+#film-info {
+  padding: 10px;
+}
+
+.ui.label {
+  margin-right: 5px;
+}
+
+#buyticket {
+  background-color: #b6624f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#buyticket:hover {
+  background-color: #421b13;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+#leftmenu {
+  width: 100%;
+  margin-left: 0;
+}
+
+#buymovie {
+  width: 100%;
+  margin-left: 0;
+}
+#poster{
+  width: auto;
+  margin-left: 0;
+  margin-right: 0;
+}
+}
+
+footer {
+  margin-bottom: 5px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+}
+
+.copyright {
+  font-size: 14px;
 }
