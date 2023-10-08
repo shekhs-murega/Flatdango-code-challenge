@@ -56,9 +56,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Function to buy a ticket
     function buyTicket(movie) {
         if (movie.capacity - movie.tickets_sold <= 0) {
-         return  window.alert("You have successfully purchased a ticket!");
-            
-        }
+         return window.alert("You have successfully purchased a ticket!");
+            }
 
         // Simulate buying a ticket (update tickets_sold)
         movie.tickets_sold++;
