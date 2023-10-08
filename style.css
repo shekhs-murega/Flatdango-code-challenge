@@ -1,0 +1,43 @@
+/* Global styles */
+body {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  padding: 20px;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
+.list-group {
+  padding: 20px;
+}
+
+#movie-details {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+/* Responsive styles for smaller screens (less than 768px) */
+@media (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .heading {
+      font-size: 1.5rem;
+  }
+
+  .list-group {
+      padding: 10px;
+  }
+
+  #movie-details {
+      padding: 10px;
+  }
+}
