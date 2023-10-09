@@ -59,6 +59,6 @@ This app is licensed under the MIT License.
 
    [git-repo-url]: < https://github.com/maryshekinah/code-challenge-2-phase-1.git>
    
-Feel free to customize this `README.md` file according to your project's specific details and requirements.
+
 
   
