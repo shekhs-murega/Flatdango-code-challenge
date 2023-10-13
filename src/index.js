@@ -13,11 +13,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     movieItem.setAttribute('data-movie-id', movie.id);
                     filmsList.appendChild(movieItem);
 
-                movieItem.addEventListener('click', (e) => {
-                    e.preventDefault()
-                    displayMovieDetails(movie);
+                    movieItem.addEventListener('click', (e) => {
+                        e.preventDefault()
+                        displayMovieDetails(movie);
+                    });
                 });
-            });
+
 // Display details of the first movie initially
                 if (movies.length > 0) {
                     displayMovieDetails(movies[0]);
@@ -31,17 +32,18 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to display movie details
     function displayMovieDetails(movie) {
         movieDetails.innerHTML = `
-        <img src="${movie.poster}" alt="${movie.title}" class="img-fluid">
+            <img src="${movie.poster}" alt="${movie.title}" class="img-fluid">
             <h2 id="title">Title: ${movie.title}</h2>
             <p id="description">Description: ${movie.description}</p>
             <p id="runtime">Runtime: ${movie.runtime} minutes</p>
             <p id="showtime">Showtime: ${movie.showtime}</p>
-            <p id="tickets-available">Tickets Available: ${movie.capacity - movie.tickets_sold}</p>;
-`
+            <p id="tickets-available">Tickets Available: ${movie.capacity - movie.tickets_sold}</p>
+        `;
+
 // Create a "Buy Ticket" button
         const buyTicketButton = document.createElement('button');
         buyTicketButton.id = 'buyticket';
-        buyTicketButton.textContent = 'Buy Ticket';
+        buyTicketButton.textContent = 'PURCHASE TICKET';
         movieDetails.appendChild(buyTicketButton);
 // Calculate available tickets by subtracting tickets_sold from capacity
         let availableTickets = movie.capacity - movie.tickets_sold;
